@@ -29,7 +29,6 @@ AWS Services Used
 | Application Load Balancer | Distributes incoming traffic |
 | Auto Scaling Group | Automatically adjusts EC2 capacity |
 | Launch Template | Defines EC2 instance configuration |
-| Amazon CloudWatch | Monitors resource metrics and alarms |
 | Amazon SNS | Sends monitoring notifications |
 | Amazon Route 53 | Manages domain DNS routing |
 | AWS CLI | Automates AWS command-line operations |
@@ -65,8 +64,6 @@ Key Features
 - Helps optimize infrastructure capacity.
 
  4. Monitoring and Notifications
-- CloudWatch monitors EC2 metrics.
-- CloudWatch alarms detect configured threshold breaches.
 - SNS sends notifications when configured alarm actions are triggered.
 
 Project Implementation Steps
@@ -104,24 +101,19 @@ Project Implementation Steps
 - Selected multiple Availability Zones.
 - Configured scaling policies and health checks.
 
- Step 7: Configure CloudWatch
-- Monitored EC2 performance metrics.
-- Created CloudWatch alarms.
-- Configured monitoring for infrastructure health.
-
- Step 8: Configure SNS Notifications
+ Step 7: Configure SNS Notifications
 - Created an SNS topic.
 - Configured the required notification permissions.
 - Subscribed an email endpoint.
 - Connected notifications to configured CloudWatch alarms.
 
- Step 9: Configure Route 53 (Domain Integration)
+ Step 8: Configure Route 53 (Domain Integration)
 - Registered a custom domain.
 - Created a Route 53 public hosted zone.
 - Configured DNS nameservers.
 - Connected the domain to the Application Load Balancer using an Alias A record.
 
- Step 10: Testing and Validation
+ Step 9: Testing and Validation
 - Verified website accessibility through the Load Balancer.
 - Checked EC2 target health.
 - Tested instance replacement after an unhealthy instance condition.
@@ -151,7 +143,6 @@ These troubleshooting activities helped me understand practical AWS infrastructu
 - VPC and Networking
 - Application Load Balancing
 - Auto Scaling and Auto Healing
-- CloudWatch Monitoring
 - SNS Notifications
 - DNS Management
 - Linux Fundamentals
