@@ -2,7 +2,7 @@ AWS Resilient Web Server | Auto Healing & Auto Scaling
 
 Project Overview
 
-The AWS Resilient Web Server** is a highly available and fault-tolerant web application infrastructure built using Amazon Web Services.
+The AWS Resilient Web Server is a highly available and fault-tolerant web application infrastructure built using Amazon Web Services.
 
 The main objective of this project is to maintain website availability by automatically replacing unhealthy EC2 instances and dynamically adjusting server capacity based on application demand.
 
